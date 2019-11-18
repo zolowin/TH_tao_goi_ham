@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function processConfirm(answer) {
+            let result = '';
+            if (answer == 'yes' || answer == 'Yes' || answer == 'YES') {
+                result = "Get out! Idiots!!!";
+            } else if (answer == 'no' || answer == 'No' || answer == "NO" ) {
+                result = "You're welcome!";
+            } else {
+                result = "Input again man!";
+            }
+            return result;
+        }
+        let theAnswer = prompt('Do you have lover?? (Answer yes or no!) :');
+        let confirmAnswer = processConfirm(theAnswer);
+        alert(confirmAnswer);
+
+    </script>
+</body>
+
+</html>
